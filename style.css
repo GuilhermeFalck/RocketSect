@@ -1,0 +1,88 @@
+body {
+  min-height: 100vh;
+  margin: 0; /* Remove a margem padrão */
+  background: #2c2b3d;
+  color: #ffffff;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.page {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 60px;
+  max-height: 100%; /* Garante que .page não exceda a altura da janela do navegador */
+  overflow: auto; /* Permite o rolamento dentro de .page, se necessário */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #00bfa6;
+  transition: 0.5s;
+}
+
+main {
+  margin: 131px auto 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  color: #00bfa6;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+section p {
+  font-family: "Open Sans", sans-serif;
+  color: #c2c2c2;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+section {
+  width: 700px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: column; /* Organiza os itens em coluna */
+}
+
+#line {
+  border-top: 1px solid #00bfa6; /* Assume que você está criando uma linha horizontal */
+  width: 500px; /* Ou qualquer largura que você deseje */
+  margin-bottom: 20px; /* Ajuste conforme necessário para espaço entre a linha e o texto */
+}
+#padlock {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
